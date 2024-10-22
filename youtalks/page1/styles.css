@@ -1,0 +1,411 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: .3px solid rgb(238, 238, 238);
+}
+
+.header .logo img {
+    max-width: 10vh;
+    height: auto;
+}
+
+.header .links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.header .links a {
+    text-decoration: none;
+    color: #333;
+    font-size: small;
+}
+
+.header button {
+    background-color: #E3F6F5;
+    color: #05B2A5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.menu {
+    display: none;
+}
+
+/* Miscellaneous Styles */
+.way {
+    margin-left: 3%;
+    color: gray;
+}
+
+/* Section Styles */
+.sections {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.sections a {
+    border: 1px solid grey;
+    border-radius: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: x-small;
+}
+
+.sections a:nth-child(3) {
+    border-color: #17C8BB;
+}
+
+.headline {
+    margin-left: 3%;
+}
+
+.big-cards, .small-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 3%;
+    max-width: 100%;
+
+}
+
+
+.big-card, .small-card {
+    background-color: #fff;
+    border: .5px solid #d8d8d8;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.big-card, .small-card {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.big-card .image, .small-card .image {
+    position: relative;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.egg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.tag {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.tag p {
+    background-color: #ffffffb3;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+
+h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px 10px;
+}
+
+.small-card h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.author, .description, .date {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 5px 10px;
+}
+
+.date {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+
+.else-btn {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.else-btn button {
+    background-color: #35B3A8;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 65px;
+    border-radius: 5px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: #2963A3;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer .footer-sec-1,
+footer .footer-sec-2,
+footer .footer-sec-3 {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 10px;
+    text-align: center; 
+}
+
+footer .footer-sec-1{
+    display: flex;
+    margin-left: 3%;
+}
+footer .footer-sec-1 .foot-links{
+    text-align: left;
+}
+
+footer .footer-sec-1 .foot-links a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-sec-2 h5, p{
+    text-align: left;
+}
+
+.form{
+    display: flex;
+    justify-content: left;
+}
+
+.form input{
+    width: 70%;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.form button{
+    background: #16C8BB;
+    border: 2px solid #16C8BB;
+    border-radius: 0 5px 5px 0;
+}
+
+footer .footer-sec-3 {
+    display: block;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a{
+    color: #333;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1000px;
+}
+
+.bottom-footer{
+    background-color: #2963A3;
+    border-top: .5px solid #d4d4d487;
+    border-width: 80%;
+    display: flex;
+}
+.bottom-footer p{
+    margin-left: 20px;
+    font-size: small;
+    color: #d4d4d487;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0;
+    }
+    
+    footer .footer-sec-1,
+    footer .footer-sec-2,
+    footer .footer-sec-3 {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 729px) {
+    footer{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 969px) {
+    .header .psychologist-btn, .header .links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1070px) {
+    .header .links a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .big-card .image {
+        min-height: 200px;
+    }
+
+    .small-card .image{
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (min-width: 561px) {
+    .big-card .image {
+        min-height: 300px;
+    }
+
+
+    .small-card .image{
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 831px) {
+    .big-card .image {
+        min-height: 400px;
+    }
+
+
+    .small-card .image{
+        min-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1003px) {
+    .big-card{
+        max-width: 47%;
+    }
+
+    .big-card .image{
+        min-height: 200px;
+    }
+
+    .small-card{
+        max-width: 31%;
+    }
+    .small-card .image{
+        min-height: 200px;
+    }
+    .sections a{
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 1000px;
+    }
+    .big-card{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1170px) {
+    .big-card{
+        max-width: 48%;
+    }
+
+    .big-card .image{
+        min-height: 300px;
+    }
+
+    .small-card .image{
+        min-height: 300px;
+    }
+    .header .links a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1600px){
+    .big-card{
+        max-width: 48.5%;
+    }
+    .big-card .image{
+        min-height: 400px;
+    }
+
+    .small-card{
+        max-width: 31.5%;
+    }
+    .small-card .image{
+        min-height: 400px;
+    }
+    .header .links a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1755px){
+    .small-card{
+        max-width: 32%;
+    }
+}
